@@ -4,9 +4,12 @@ import "./contact.css";
 export default function Contact() {
   return (
     <div className="contact">
-      <h3>
-        Need to create message page to send questions to email automatically.
-      </h3>
+      <form className="messageForm">
+        Leave me a message: <br />
+        <input type="text" name="message" /> <br />
+        <br />
+        <input type="button" onclick="somethingsomeday" value="Submit" />
+      </form>
     </div>
   );
 }
