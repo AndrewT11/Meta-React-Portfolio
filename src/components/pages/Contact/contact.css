@@ -1,3 +1,7 @@
 .contact {
   background-color: mediumspringgreen;
 }
+
+li {
+  list-style: none;
+}

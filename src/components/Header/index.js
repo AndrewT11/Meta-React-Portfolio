@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navigation from "./pages/Navigation";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+import Navigation from "../pages/Navigation";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
 import "./header.css";
 
 export default function Header() {
