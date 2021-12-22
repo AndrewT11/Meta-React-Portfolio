@@ -1,8 +1,8 @@
 import React from "react";
 import "./portfolio.css";
-import { project1 } from "../../images/madquickstatsSS.png";
-import { project2 } from "../../images/1stteamallprofile.png";
-import { project3 } from "../../images/dailyplannerSS.png";
+import project1 from "../../images/madquickstatsSS.png";
+import project2 from "../../images/1stteamallprofile.png";
+import project3 from "../../images/dailyplannerSS.png";
 
 export default function Portfolio() {
   return (
