@@ -1,0 +1,353 @@
+:root {
+  --headercolor: rgb(167, 167, 168);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #33393f;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 22, 22, 0.8);
+  /* position: sticky; */
+  top: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+  border-radius: 12px;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 650px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("turntable.jpg") no-repeat center center/cover;
+  height: 750px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+/*  About Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+  padding: 20px;
+  margin: 10px;
+  /* box-shadow: 0 0 30px gold; */
+}
+
+#about h1 {
+  color: var(--headercolor);
+}
+
+#pic {
+  display: flex;
+  width: 100%;
+}
+
+#pic img {
+  width: 500px;
+  height: 500px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#intro h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: rgb(167, 167, 168);
+  background-color: rgb(22, 22, 22, 0.7);
+}
+
+#intro p {
+  font-size: 1.5rem;
+  color: rgb(167, 167, 168);
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 25px 10px;
+  border-radius: 15px;
+  border: 5px solid rgba(110, 110, 110, 0.808);
+  background-color: rgb(22, 22, 22);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 30px rgb(226, 226, 224);
+  border-radius: 12px;
+}
+
+.port-item h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PORTFOLIO TEST CODE FOR RISING HEADER IN PORTFOLIO ITEMS */
+.row {
+  /* create our main grid with flexbox, use negative margins to 
+        offset the padding on the .port-column class */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.port-column {
+  /* using a mobile-first approach, set base column width to be 100% 
+        and we'll update it using media queries for larger screen sizes */
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.port-item {
+  /* make each code card a flexbox column to align and justify content within it */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: grey;
+  margin-bottom: 50px;
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px solid #e0eae4;
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.port-item .item-header {
+  /* use position and negative margins to move title of card over the card's 
+        outline and create an overlap effect */
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #33393f;
+  color: rgb(143, 152, 163);
+  border: 2px solid #e0eae4;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.port-item:hover,
+.item-header {
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+  box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* box-shadow: 0 0 20px gold; */
+  margin: 10px;
+}
+
+#contact h1 {
+  color: var(--headercolor);
+}
+
+.contactbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.contactbar ul li {
+  font-size: 45px;
+  border: 1px solid rgb(167, 167, 168);
+  background-color: rgb(22, 22, 22, 0.5);
+  transition: 0.5s ease;
+}
+
+.contactbar ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgb(167, 167, 168);
+  background: rgb(167, 167, 168);
+  color: black;
+}
+
+@media screen and (max-width: 786px) {
+  /* Nav Bar */
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Headings */
+  .headings {
+    font-size: 2.5rem;
+  }
+
+  /* ABOUT   */
+  #pic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pic img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #intro h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Contact */
+  .contactbar ul li {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* Home */
+  #home {
+    height: 820px;
+  }
+
+  /* About */
+  #pic img {
+    width: 300px;
+    height: 300px;
+  }
+  #intro h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Portfolio */
+  .gallery img {
+    width: 275px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  /* Nav Bar  */
+  .navbar ul li {
+    font-family: century;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Contact */
+  .contactbar ul li {
+    font-size: 25px;
+  }
+}
+
+/* Github buttons in portfolio */
+
+.github {
+  background: #33393f;
+  color: rgb(143, 152, 163);
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.github:hover {
+  box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+  transform: scale(1.1);
+}
