@@ -8,17 +8,20 @@ export default function Footer() {
       <nav class="contactbar">
         <ul>
           <li>
-            <a href="mailto:TranAndrewWebDev@gmail.com">
+            <a href="mailto:TranAndrewWebDev@gmail.com" target="_blank">
               <i class="fas fa-envelope-open-text fa-4x"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/AndrewT11">
+            <a href="https://github.com/AndrewT11" target="_blank">
               <i class="fab fa-github fa-4x"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/andrew-tran-011/">
+            <a
+              href="https://www.linkedin.com/in/andrew-tran-011/"
+              target="_blank"
+            >
               {" "}
               <i class="fa fa-linkedin-square fa-4x"></i>
             </a>

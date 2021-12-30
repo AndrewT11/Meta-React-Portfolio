@@ -1,8 +1,5 @@
-/* .footer {
-  background-color: blue;
-  display: flex;
-
-  width: 100%;
+.footer {
+  background-color: darkgrey;
 }
 
 .contactbar ul {
@@ -31,4 +28,4 @@
   box-shadow: 0 0 10px rgb(167, 167, 168);
   background: rgb(167, 167, 168);
   color: black;
-} */
+}
