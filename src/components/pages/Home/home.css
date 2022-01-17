@@ -1,6 +1,7 @@
 .home {
   display: flex;
   height: 100vh;
+  background-color: black;
 }
 
 .home-left {
@@ -100,7 +101,7 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: aqua;
+  color: yellow;
 }
 
 .home-image {

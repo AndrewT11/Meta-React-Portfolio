@@ -5,8 +5,27 @@ export default function Contact() {
   return (
     <div className="contact">
       <form className="messageForm">
-        Leave me a message: <br />
-        <input type="text" name="message" /> <br />
+        <input
+          type="text"
+          value="Name"
+          name="name"
+          className="contact-message"
+        />
+        <br />
+        <input
+          type="text"
+          value="E-mail"
+          name="email"
+          className="contact-message"
+        />
+        <br />
+        <input
+          type="text"
+          value="message"
+          name="message"
+          className="contact-message"
+        />
+        <br />
         <br />
         <input type="button" onclick="somethingsomeday" value="Submit" />
       </form>

@@ -1,7 +1,14 @@
 .footer {
   height: 100px;
+  background-color: black;
 }
 
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 .contactbar ul {
   display: flex;
   justify-content: space-evenly;

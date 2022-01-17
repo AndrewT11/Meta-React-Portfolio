@@ -1,6 +1,6 @@
-/* .portfolio {
-  background-color: chartreuse;
-} */
+.portfolio {
+  background-color: black;
+}
 
 #portfolio {
   display: flex;
