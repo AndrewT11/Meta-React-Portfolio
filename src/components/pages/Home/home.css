@@ -1,4 +1,110 @@
-/* .home {
-  background-color: magenta;
-  
-} */
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.home-right {
+  flex: 1;
+}
+
+.home-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-greeting {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.home-name {
+  font-size: 60px;
+}
+
+.home-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.home-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  20% {
+    transform: translateY(-50px);
+  }
+  40% {
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(-150px);
+  }
+  80% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(-250px);
+  }
+}
+
+.home-title-jobs {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+.home-title-jobs2 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+
+.home-title-jobs3 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+.home-title-jobs4 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: purple;
+}
+
+.home-title-jobs5 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+}
+
+.home-title-jobs6 {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: aqua;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

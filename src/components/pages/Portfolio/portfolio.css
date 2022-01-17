@@ -1,3 +1,38 @@
 /* .portfolio {
   background-color: chartreuse;
 } */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 25px 10px;
+  border-radius: 15px;
+  border: 5px solid rgba(110, 110, 110, 0.808);
+  background-color: rgb(22, 22, 22);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 30px rgb(226, 226, 224);
+  border-radius: 12px;
+}
+
+.port-item h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

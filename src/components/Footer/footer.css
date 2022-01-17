@@ -1,5 +1,5 @@
 .footer {
-  background-color: darkgrey;
+  height: 100px;
 }
 
 .contactbar ul {
@@ -17,7 +17,7 @@
 }
 
 .contactbar ul li {
-  font-size: 45px;
+  font-size: 25px;
   border: 1px solid rgb(167, 167, 168);
   background-color: rgb(22, 22, 22, 0.5);
   transition: 0.5s ease;

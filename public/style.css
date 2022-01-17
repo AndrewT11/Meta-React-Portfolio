@@ -1,5 +1,4 @@
 :root {
-  --headercolor: rgb(167, 167, 168);
   /* }
 * {
   margin: 0;
@@ -140,7 +139,7 @@ body {
 
 /* Portfolio Section */
 
-#portfolio {
+/* #portfolio {
   display: flex;
   flex-direction: column;
   color: white;
@@ -173,7 +172,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* PORTFOLIO TEST CODE FOR RISING HEADER IN PORTFOLIO ITEMS */
 .row {

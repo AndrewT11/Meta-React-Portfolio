@@ -1,27 +1,38 @@
 import React from "react";
 import "./home.css";
+import Thanos from "./images/Thanos.png";
 
 export default function Home() {
   return (
     <div className="home">
-      <h1 className="heading">
-        Andrew Tran's <br />
-        Home Page
-      </h1>
-      <h3>TranAndrewWebDev@gmail.com</h3>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <div className="home-left">
+        <div className="home-left-wrapper">
+          <h2 className="home-greeting">Salutations, you've stumbled upon</h2>
+          <h1 className="home-name">
+            Andrew Tran's <br />
+            Portfolio Page
+          </h1>
+          <div className="home-title">
+            <div className="home-title-wrapper">
+              <div className="home-title-jobs">Aspiring Web Developer</div>
+              <div className="home-title-jobs2">Free Thinker</div>
+              <div className="home-title-jobs3">Sci-fi Nerd</div>
+              <div className="home-title-jobs4">Basketball Junkie</div>
+              <div className="home-title-jobs5">Infinity Guantlet Owner</div>
+              <div className="home-title-jobs6">World Breaker</div>
+            </div>
+          </div>
+          <div className="home-desc">
+            A software engineer in training that is versed in front-end and
+            back-end web development. Interested in creating eye-catching, fresh
+            websites. Interested being the keyword. Implementation is getting
+            there. :P
+          </div>
+        </div>
+      </div>
+      <div className="home-right">
+        <img src={Thanos} alt="" className="home-image"></img>
+      </div>
     </div>
   );
 }
