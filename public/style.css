@@ -1,11 +1,12 @@
 :root {
   --headercolor: rgb(167, 167, 168);
-/* }
+  /* }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+*/
+}
 
 html {
   scroll-behavior: smooth;
