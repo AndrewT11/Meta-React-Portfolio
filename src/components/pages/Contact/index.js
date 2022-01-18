@@ -5,18 +5,13 @@ export default function Contact() {
   return (
     <div className="contact">
       <form className="messageForm">
-        <input
-          type="text"
-          value="Name"
-          name="name"
-          className="contact-message"
-        />
+        <input type="text" value="Name" name="name" className="contact-name" />
         <br />
         <input
           type="text"
           value="E-mail"
           name="email"
-          className="contact-message"
+          className="contact-email"
         />
         <br />
         <input
