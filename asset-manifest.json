@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mreact-portfolio/static/css/main.ca23e974.css",
+    "main.js": "/mreact-portfolio/static/js/main.9456a79e.js",
+    "static/media/1stteamallprofile.png": "/mreact-portfolio/static/media/1stteamallprofile.413193cfc459f523df6c.png",
+    "static/media/bebopsilhoutte.jpg": "/mreact-portfolio/static/media/bebopsilhoutte.c9614592502e99254344.jpg",
+    "static/media/madquickstatsSS.png": "/mreact-portfolio/static/media/madquickstatsSS.ceb9bad13dffbe24d732.png",
+    "static/media/Thanos.png": "/mreact-portfolio/static/media/Thanos.67e8469226e4e84e71e1.png",
+    "static/media/dailyplannerSS.png": "/mreact-portfolio/static/media/dailyplannerSS.7aefbf784d834a349896.png",
+    "index.html": "/mreact-portfolio/index.html",
+    "main.ca23e974.css.map": "/mreact-portfolio/static/css/main.ca23e974.css.map",
+    "main.9456a79e.js.map": "/mreact-portfolio/static/js/main.9456a79e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca23e974.css",
+    "static/js/main.9456a79e.js"
+  ]
+}
