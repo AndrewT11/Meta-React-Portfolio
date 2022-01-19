@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Thanos from "./images/Thanos.png";
+import Me from "./images/headshotnobg.png";
 
 export default function Home() {
   return (
@@ -15,11 +15,10 @@ export default function Home() {
           <div className="home-title">
             <div className="home-title-wrapper">
               <div className="home-title-jobs">Aspiring Web Developer</div>
-              <div className="home-title-jobs2">Free Thinker</div>
-              <div className="home-title-jobs3">Sci-fi Nerd</div>
+              <div className="home-title-jobs2">Problem Solver</div>
+              <div className="home-title-jobs3">Dog Father</div>
               <div className="home-title-jobs4">Basketball Junkie</div>
-              <div className="home-title-jobs5">Infinity Guantlet Owner</div>
-              <div className="home-title-jobs6">World Breaker</div>
+              <div className="home-title-jobs5">Sci-fi Nerd</div>
             </div>
           </div>
           <div className="home-desc">
@@ -31,7 +30,7 @@ export default function Home() {
         </div>
       </div>
       <div className="home-right">
-        <img src={Thanos} alt="" className="home-image"></img>
+        <img src={Me} alt="" className="home-image"></img>
       </div>
     </div>
   );

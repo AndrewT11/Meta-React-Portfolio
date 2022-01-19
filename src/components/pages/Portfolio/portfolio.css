@@ -36,3 +36,62 @@
   justify-content: center;
   align-items: center;
 }
+
+.row {
+  /* create our main grid with flexbox, use negative margins to 
+        offset the padding on the .port-column class */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.port-column {
+  /* using a mobile-first approach, set base column width to be 100% 
+        and we'll update it using media queries for larger screen sizes */
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.port-item {
+  /* make each code card a flexbox column to align and justify content within it */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: grey;
+  margin-bottom: 50px;
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px solid #e0eae4;
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.port-item .item-header {
+  /* use position and negative margins to move title of card over the card's 
+        outline and create an overlap effect */
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #33393f;
+  color: rgb(143, 152, 163);
+  border: 2px solid #e0eae4;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.port-item:hover,
+.item-header {
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+  box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+  transform: scale(1.1);
+}
