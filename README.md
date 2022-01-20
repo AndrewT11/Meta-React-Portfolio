@@ -49,6 +49,13 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ![Thanos on Portfolio Homepage](./src/img/MetaReactPortSS.png)
 
+## Technologies
+
+- React.js
+- Javascript
+- HTML
+- CSS
+
 ## Links
 
 - [Deployed Website Link](https://andrewt11.github.io/meta-portfolio/)
